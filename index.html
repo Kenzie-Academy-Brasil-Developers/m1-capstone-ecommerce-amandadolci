@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Quicksand:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./database.js" defer></script>
+    <script src="./script.js" defer></script>
+    <title>Threads & Co.</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav1"><h1>Threads & Co.</h1></div>
+      <div class="nav2">
+        <h4>Produtos:</h4>
+        <a class="todos" href="">Todos</a>
+        <a class="acessorios" href="">Acessórios</a>
+        <a class="calcados" href="">Calçados</a>
+        <a class="camisetas" href="">Camisetas</a>
+      </div>
+      <div class="nav3">
+        <span class="input" id="hide"
+          ><input
+            class="input-text"
+            type="text"
+            placeholder="Digite aqui sua pesquisa"
+            onkeyup="search()"
+          />
+          <button class="input-search">
+            <span class="material-symbols-outlined"> search </span>
+          </button></span
+        >
+        <button class="search">
+          <span class="material-symbols-outlined"> search </span></button
+        ><button class="cart">
+          <span class="material-symbols-outlined"> shopping_cart </span>
+        </button>
+      </div>
+    </nav>
+    <main>
+      <section>
+        <ul class="ul-main">
+          <div class="empty-main" id="hide">
+            <!-- id="hide" -->
+            <h4>Nenhum produto correspondente à categoria selecionada.</h4>
+          </div>
+          <!-- <li class="card">
+            <a class="card-img-a" href=""
+              ><img class="card-img" src="./img/jaqueta.svg" alt="Jaqueta"
+            /></a>
+            <p class="categoria">Camisetas</p>
+            <a class="nome-produto" href=""
+              >Lightweight Jacket</a
+            >
+            <p class="descricao">
+              Adicione um pouco de energia ao seu guarda-roupa de inverno com
+              esta jaqueta vibrante...
+            </p>
+            <p class="preco">R$100,00</p>
+            <button class="add">Adicionar ao carrinho</button>
+          </li>-->
+        </ul>
+      </section>
+      <aside>
+        <div class="aside1"><h3>Carrinho</h3></div>
+        <ul class="ul-aside">
+          <div class="empty-cart">
+            <!-- id="hide" -->
+            <h4>Carrinho vazio</h4>
+            <small>Adicione itens</small>
+          </div>
+          <!-- <li class="minicard">
+            <img class="minicard-img" src="./img/jaqueta.svg" alt="Jaqueta" />
+            <div class="minicard-div">
+              <p class="minicard-nome">Lightweight Jacket</p>
+              <span
+                ><p class="minicard-preco">R$100,00</p>
+                <p>(02 un.)</p></span
+              >
+              <button class="remove">Remover produto</button>
+            </div>
+          </li> -->
+        </ul>
+        <div class="aside2">
+          <div class="aside2-1">
+            <p>Quantidade:</p>
+            <p id="count">0</p>
+          </div>
+          <div class="aside2-1">
+            <p>Total:</p>
+            <p id="total">R$00,00</p>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <div class="footer1"><h1>Threads & Co.</h1></div>
+      <div class="footer2">
+        <p>Rua dos Bobos, nº 0</p>
+        <p>CEP 80000-000</p>
+        <p>Curitiba - PR</p>
+      </div>
+    </footer>
+  </body>
+</html>
