@@ -23,13 +23,9 @@ function cardButtonListener() {
         unCount = 1;
       } else {
         let un = document.querySelector(`#un${id}`);
-        if (un.innerHTML == '') {
-          unCount++;
-        } else {
-          let conversor = un.innerHTML;
-          unCount = parseInt(`${conversor[1]}${conversor[2]}`);
-          unCount++;
-        }
+        let conversor = un.innerHTML;
+        unCount = parseInt(`${conversor[1]}${conversor[2]}`);
+        unCount++;
         if (unCount < 10) {
           un.innerHTML = `(0${unCount} un.)`;
         } else {
@@ -84,15 +80,14 @@ function cardCart(produto) {
     }
     let conversor = un.innerHTML;
     unCount = parseInt(`${conversor[1]}${conversor[2]}`);
-    if (unCount == 1 /* un.innerHTML == '' */) {
-      let liCard = e.path[2];
+    if (unCount == 1) {
+      // let path = evento.composedPath();
+      // let liCard = path[i];
+      let liCard = e.composedPath()[2];
       liCard.remove();
     } else {
       unCount--;
-      if (unCount == 0) {
-        let liCard = e.path[2];
-        liCard.remove();
-      } else if (unCount < 10) {
+      if (unCount < 10) {
         un.innerHTML = `(0${unCount} un.)`;
       } else {
         un.innerHTML = `(${unCount} un.)`;
@@ -190,6 +185,13 @@ filtroAcessorios.addEventListener('click', function (e) {
 
 let filtroCalcados = document.querySelector('.calcados');
 filtroCalcados.addEventListener('click', function (e) {
+  e.preventDefault();
+  cardProdutos(filtro(data, e));
+  cardButtonListener();
+});
+
+let filtroCalcas = document.querySelector('.calcas');
+filtroCalcas.addEventListener('click', function (e) {
   e.preventDefault();
   cardProdutos(filtro(data, e));
   cardButtonListener();

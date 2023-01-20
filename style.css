@@ -24,6 +24,7 @@ body {
   font-size: 36px;
   margin: 0;
   min-width: 240px;
+  padding-left: 10px;
 }
 
 nav {
@@ -40,7 +41,7 @@ nav {
 }
 
 .nav2 {
-  width: 400px;
+  width: 440px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -183,11 +184,13 @@ section {
   justify-content: center;
   margin: 0;
   margin-bottom: 5px;
+  box-sizing: border-box;
 }
 
 .card-img {
-  width: 165px;
-  height: auto;
+  max-height: 123px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .categoria {
@@ -252,6 +255,9 @@ aside {
   max-height: 450px;
   border-radius: 5px;
   margin-left: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .aside1 {
@@ -282,6 +288,17 @@ aside {
   height: 100%;
 }
 
+.ul-aside::-webkit-scrollbar {
+  width: 7px;
+  background: #e8e8e8;
+}
+.ul-aside::-webkit-scrollbar-track {
+}
+.ul-aside::-webkit-scrollbar-thumb {
+  background-color: #96939b;
+  border-radius: 2px;
+}
+
 .empty-cart {
   display: flex;
   flex-direction: column;
@@ -298,7 +315,7 @@ aside {
 
 .minicard {
   list-style: none;
-  width: 215px;
+  width: 225px;
   min-height: 70px;
   display: flex;
   flex-direction: row;
@@ -306,11 +323,13 @@ aside {
   background-color: #e8e8e8;
   border-radius: 5px;
   margin-top: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
   color: #3f4045;
 }
 
 .minicard-img {
-  width: 65px;
+  height: 65px;
 }
 
 .minicard-div {
@@ -318,7 +337,7 @@ aside {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
-  width: 142px;
+  width: 148px;
 }
 
 .minicard-nome {
@@ -406,6 +425,7 @@ footer {
 }
 
 .footer2 p {
+  /* text-align: center; */
   margin: 0;
   font-size: 14.5px;
 }

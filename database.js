@@ -1,18 +1,68 @@
 // Banco de dados dos produtos
 const data = [
+  // {
+  //   id: 1,
+  //   img: './img/jaqueta.svg',
+  //   nameItem: 'Jaqueta Corta Vento',
+  //   description:
+  //     'Dê um up no seu guarda-roupa com esta jaqueta perfeita para temperaturas amenas e material...',
+  //   value: 200,
+  //   addCart: 'Adicionar ao carrinho',
+  //   tag: ['Camisetas'],
+  // },
   {
     id: 1,
-    img: './img/jaqueta.svg',
-    nameItem: 'Jaqueta Corta Vento',
+    img: './img/simple-white-hoodie.png',
+    nameItem: 'Moletom Sportswear',
     description:
-      'Dê um up no seu guarda-roupa com esta jaqueta perfeita para temperaturas amenas e material...',
-    value: 200,
+      'Esse moletom com capuz é feito com tecido denso e macio dias frios e conforto duradouro.',
+    value: 319,
     addCart: 'Adicionar ao carrinho',
     tag: ['Camisetas'],
   },
   {
     id: 2,
-    img: './img/gorro.svg',
+    img: './img/Calça Nike 02.png',
+    nameItem: 'Calça Jordan Essential',
+    description:
+      'Esse moletom traz a versatilidade que você precisa para o dia a dia, possui ajuste relaxado fácil e um...',
+    value: 399,
+    addCart: 'Adicionar ao carrinho',
+    tag: ['Calças'],
+  },
+  // {
+  //   id: 3,
+  //   img: './img/mascara.svg',
+  //   nameItem: 'Máscara facial',
+  //   description:
+  //     'Esta máscara facial durável é feita de duas camadas de tecido e possui presilhas para maior con...',
+  //   value: 20,
+  //   addCart: 'Adicionar ao carrinho',
+  //   tag: ['Acessórios'],
+  // },
+  // {
+  //   id: 4,
+  //   img: './img/camiseta_preta.svg',
+  //   nameItem: 'T-Shirt Preta',
+  //   description:
+  //     'Esta t-shirt é imprescindível no seu guarda-roupa, combina conforto e um caimento perfeito para looks...',
+  //   value: 120,
+  //   addCart: 'Adicionar ao carrinho',
+  //   tag: ['Camisetas'],
+  // },
+  {
+    id: 3,
+    img: './img/Bermuda Nike 04.png',
+    nameItem: 'Shorts Dri-FIT',
+    description:
+      'Supere seu limite durante treinos de alta intensidade com esse Shorts Dri-FIT. Tecido flexível que...',
+    value: 159,
+    addCart: 'Adicionar ao carrinho',
+    tag: ['Calças'],
+  },
+  {
+    id: 4,
+    img: './img/gorro.png',
     nameItem: 'Gorro Grafite',
     description:
       'O gorro é perfeito para compor looks de inverno, possui um visual minimalista e é um grande aliado...',
@@ -21,28 +71,48 @@ const data = [
     tag: ['Acessórios'],
   },
   {
-    id: 3,
-    img: './img/mascara.svg',
-    nameItem: 'Máscara facial',
+    id: 5,
+    img: './img/Mochila Nike.png',
+    nameItem: 'Mochila SB Courthouse',
     description:
-      'Esta máscara facial durável é feita de duas camadas de tecido e possui presilhas para maior con...',
-    value: 20,
+      'Esta mochila proporciona um amplo espaço para armazenar seu equipamento, com alças na...',
+    value: 399,
     addCart: 'Adicionar ao carrinho',
     tag: ['Acessórios'],
   },
   {
-    id: 4,
-    img: './img/camiseta_preta.svg',
-    nameItem: 'T-Shirt Preta',
+    id: 6,
+    img: './img/nike-air-force-2.png',
+    nameItem: 'Nike Air Force 1 Branco',
     description:
-      'Esta t-shirt é imprescindível no seu guarda-roupa, combina conforto e um caimento perfeito para looks...',
-    value: 120,
+      'O brilho perdura no Nike Air Force 1, o tênis original do basquete que dá um toque de inovação naquilo',
+    value: 899,
     addCart: 'Adicionar ao carrinho',
-    tag: ['Camisetas'],
+    tag: ['Calçados'],
   },
   {
-    id: 5,
-    img: './img/camiseta_branca.svg',
+    id: 7,
+    img: './img/Chapéu.png',
+    nameItem: 'Chapéu Bucket',
+    description:
+      'É feito com tecido ripstop repelente de água para conforto leve e durabilidade.',
+    value: 449,
+    addCart: 'Adicionar ao carrinho',
+    tag: ['Acessórios'],
+  },
+  {
+    id: 8,
+    img: './img/Calça Nike 011.png',
+    nameItem: 'Calça Tech Fleece',
+    description:
+      'Ideais para o tempo mais frio e perfeitas para o uso diário. Espaçosa na coxa, seu design...',
+    value: 379,
+    addCart: 'Adicionar ao carrinho',
+    tag: ['Calças'],
+  },
+  {
+    id: 9,
+    img: './img/camiseta_branca.png',
     nameItem: 'T-Shirt Branca',
     description:
       'Agora você encontrou a camiseta básica do seu guarda-roupa. É confeccionada em um tecido de...',
@@ -51,14 +121,84 @@ const data = [
     tag: ['Camisetas'],
   },
   {
-    id: 6,
-    img: './img/moletom.svg',
+    id: 10,
+    img: './img/turtleneck-sweater.png',
+    nameItem: 'Suéter Gola Rolê Grafite',
+    description:
+      'A blusa de manga longa é confeccionada em malha e possui um aspecto rústico e um ótimo...',
+    value: 229,
+    addCart: 'Adicionar ao carrinho',
+    tag: ['Camisetas'],
+  },
+  {
+    id: 11,
+    img: './img/Bolsa Transversal.png',
+    nameItem: 'Bolsa Transversal',
+    description:
+      'Mantenha seu estilo clássico e carregue todos seus itens essenciais nessa bolsa com alça...',
+    value: 250,
+    addCart: 'Adicionar ao carrinho',
+    tag: ['Acessórios'],
+  },
+  {
+    id: 12,
+    img: './img/nike-air-force-1.png',
+    nameItem: 'Nike Air Force 1 Preto',
+    description:
+      'O brilho perdura no Nike Air Force 1, o tênis original do basquete que dá um toque de inovação naquilo',
+    value: 799,
+    addCart: 'Adicionar ao carrinho',
+    tag: ['Calçados'],
+  },
+  {
+    id: 13,
+    img: './img/Bermuda Nike 03.png',
+    nameItem: 'Shorts PSG Cargo',
+    description:
+      'Perfeitos para o dia a dia, são fabricados com fleece escovado macio que proporciona uma...',
+    value: 279,
+    addCart: 'Adicionar ao carrinho',
+    tag: ['Calças'],
+  },
+  {
+    id: 14,
+    img: './img/Boné Nike.png',
+    nameItem: 'Boné Classic 99',
+    description:
+      'O boné Classic 99 Trucker inclui o clássico bordado no painel frontal e um fechamento ajustável.',
+    value: 209,
+    addCart: 'Adicionar ao carrinho',
+    tag: ['Acessórios'],
+  },
+  {
+    id: 15,
+    img: './img/moletom.png',
     nameItem: 'Jaqueta Champion',
     description:
       'Proteja-se dos elementos com a jaqueta embalável Champion. Esta peça feita em poliéster premium...',
     value: 250,
     addCart: 'Adicionar ao carrinho',
     tag: ['Camisetas'],
+  },
+  {
+    id: 16,
+    img: './img/Bermuda Nike 02.png',
+    nameItem: 'Shorts Sportswear Club',
+    description:
+      'Mais armazenamento. Mais leve. Os shorts cargo Sportswear Club são fabricados com french terry...',
+    value: 209,
+    addCart: 'Adicionar ao carrinho',
+    tag: ['Calças'],
+  },
+  {
+    id: 17,
+    img: './img/Bermuda Nike 01.png',
+    nameItem: 'Shorts Tech Fleece',
+    description:
+      'Feitos com fleece espaçador de dupla face, criado para maximizar o aquecimento sem adicionar...',
+    value: 279,
+    addCart: 'Adicionar ao carrinho',
+    tag: ['Calças'],
   },
 ];
 
